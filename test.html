@@ -1,0 +1,22 @@
+<html>
+<head>
+    // Header Stuff
+    <script>
+       // Regular Facebook Pixel Code (Does not need to be modified with async!)
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+</head>
+<body>
+    <!-- You should provide a Fallback Button here in case automatic redirect fails! -->
+    <img id="pixelLoad" src="https://www.facebook.com/tr/">
+    <script>
+        $(function()
+        {
+            $("#pixelLoad").imagesLoaded().done(function(inst)
+            {
+                setTimeout(function(){ window.location.href='www.successstealer.com'; },100);
+            });
+        });
+    </script>
+</body>
